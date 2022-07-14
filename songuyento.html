@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=+prompt('In ra bao nhieu so nguyen to dau tien')
+    let count=0
+    let N=2
+    let i=0
+    let j=0
+    while (count <num) {
+        for (i=1;i<=N;i++){
+            if (N%i==0) {j++}
+            if (j==3){break}
+        }
+        if (j==2){
+            document.write(N+"<br>")
+            count++;
+        }
+        N++
+        j=0
+    }
+</script>
+</body>
+</html>
